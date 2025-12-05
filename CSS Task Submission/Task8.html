@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<style>
+  
+  :root {
+    --bg-color: white;
+    --text-color: black;
+  }
+
+ 
+  #theme:checked ~ .box {
+    --bg-color: black;
+    --text-color: white;
+  }
+
+ 
+  .box {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 40px;
+    margin: 50px auto;
+    width: 300px;
+    text-align: center;
+    border: 1px solid gray;
+    
+  }
+</style>
+</head>
+
+<body>
+
+  <input type="checkbox" id="theme">
+  <label for="theme">Dark Mode</label>
+
+  <div class="box">
+    <h2>Theme Example</h2>
+    <p>Switch theme </p>
+  </div>
+
+</body>
+</html>

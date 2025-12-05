@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .sidebar{
+            width: 200px;
+            height: 100vh;
+            background-color: rgb(160, 109, 160);
+            color: white;
+            padding: 20px;
+            display: none;
+             
+        }
+
+        #toggle:checked ~ .sidebar{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <input type="checkbox" id="toggle" />
+    <label for="toggle"> Menu</label>
+
+   
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

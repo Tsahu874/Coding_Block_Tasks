@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Label with Hover</title>
+
+    <style>
+      .input-box {
+        position: relative;
+        width: 250px;
+        margin: 30px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: gray;
+        
+      }
+
+      /* Label moves up on hover */
+      .input-box:hover label {
+        top: -20px;
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="input-box">
+      <input type="text">
+      <label>Enter Name</label>
+    </div>
+  </body>
+</html>
