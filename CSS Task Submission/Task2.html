@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <style>
+      .NavBar {
+        height: 80px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+      }
+
+      .NavBar a {
+        margin: 0 15px;
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+      }
+
+      .NavBar a.signup {
+        color: #002b9c;
+      }
+
+      .NavBar a.account {
+        margin-left: 200px;
+      }
+
+      input {
+        width: 300px;
+        height: 30px;
+        padding-left: 10px;
+        border-radius: 5px;
+      }
+
+      button {
+        height: 30px;
+        padding: 0 15px;
+        background-color: #2a847c;
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="NavBar">
+      <div class="links">
+        <a href="https://amazon.com">amazon.in</a>
+        <a href="#" class="signup">Signup</a>
+        <a href="#">Login</a>
+        <a href="#" class="account">My Account</a>
+      </div>
+      <div>
+        <input type="text" placeholder="Search" />
+        <button>Search</button>
+      </div>
+    </nav>
+  </body>
+</html>
