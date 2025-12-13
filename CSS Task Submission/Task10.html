@@ -3,34 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Animation Task</title>
     <style>
-      .card {
-        height: 200px;
-        width: 200px;
-        border: 1px solid black;
+      .outer {
+        height: 300px;
+        width: 300px;
+        background-color: lightpink;
+        position: relative;
       }
 
-      .content {
-        display: none;   
+      @keyframes moveCircle {
+        0% {
+          transform: translate(0);
+        }
+        25% {
+          transform: translateX(250px);
+        }
+        50% {
+          transform: translate(250px, 250px);
+        }
+        75% {
+          transform: translateY(250px);
+        }
+        100% {
+          transform: translate(0);
+        }
       }
 
-      #check:checked ~ .content {
-        display: block;  }
+      @keyframes moveSquare {
+        0% {
+          transform: translate(0);
+        }
+        25% {
+          transform: translate(140px, 0);
+        }
+        50% {
+          transform: translate(140px, 140px);
+        }
+        75% {
+          transform: translate(0,140px);
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
+      .circle {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(89, 165, 203);
+        border-radius: 50%;
+        animation: moveCircle 10s linear 1s infinite;
+      }
+
+      .square {
+        height: 40px;
+        width: 40px;
+        background-color: blue;
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        animation: moveSquare 10s linear 1s infinite;
+      }
     </style>
   </head>
   <body>
-    <div class="card">
-      <h2>Card</h2>
-
-       <input type="checkbox" id="check" />
-      <label for="check">Show Name</label>
-
-      <div class="content">
-        <p>Tanishka Sahu</p>
+    <div class="outer">
+      <div class="circle">
+        
       </div>
-
-
+      <div class="square"></div>
     </div>
   </body>
 </html>
